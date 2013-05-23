@@ -4,30 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Node-libtorrent by fanatid</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/fanatid/node-libtorrent">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/fanatid/node-libtorrent/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/fanatid/node-libtorrent/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>Node-libtorrent</h1>
-        <p>libtorrent bindings for node.js</p>
 
-        <p class="view"><a href="https://github.com/fanatid/node-libtorrent">View the Project on GitHub <small>fanatid/node-libtorrent</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/fanatid/node-libtorrent/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/fanatid/node-libtorrent/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/fanatid/node-libtorrent">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>Node-libtorrent</h1>
+          <p>libtorrent bindings for node.js</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/fanatid">fanatid</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
         <h1>node-libtorrent</h1>
 
 <p>node-libtorrent provides native bindings to <a href="http://www.rasterbar.com/products/libtorrent/">libtorrent rastebar</a> as a <a href="http://nodejs.org/docs/latest/api/addons.html">Node.js addon</a>.</p>
@@ -49,20 +59,17 @@ $ node-gyp build
 
 <div class="highlight"><pre><span class="nv">lt = </span><span class="nx">require</span> <span class="s">"./build/Release/libtorrent"</span>
 
-<span class="nv">fs = </span><span class="k">new</span> <span class="nx">lt</span><span class="p">.</span><span class="nx">file_storage</span><span class="p">()</span>
-<span class="nx">lt</span><span class="p">.</span><span class="nx">add_files</span><span class="p">(</span><span class="nx">fs</span><span class="p">,</span> <span class="s">"./spec"</span><span class="p">)</span>
-<span class="nv">ct = </span><span class="k">new</span> <span class="nx">lt</span><span class="p">.</span><span class="nx">create_torrent</span><span class="p">(</span><span class="nx">fs</span><span class="p">)</span>
-<span class="nx">lt</span><span class="p">.</span><span class="nx">set_piece_hashes</span> <span class="nx">ct</span><span class="p">,</span> <span class="s">"."</span>
+<span class="nv">fs = </span><span class="k">new</span> <span class="nx">lt</span><span class="p">.</span><span class="nx">FileStorage</span><span class="p">()</span>
+<span class="nx">lt</span><span class="p">.</span><span class="nx">addFiles</span><span class="p">(</span><span class="nx">fs</span><span class="p">,</span> <span class="s">"./spec"</span><span class="p">)</span>
+<span class="nv">ct = </span><span class="k">new</span> <span class="nx">lt</span><span class="p">.</span><span class="nx">CreateTorrent</span><span class="p">(</span><span class="nx">fs</span><span class="p">)</span>
+<span class="nx">lt</span><span class="p">.</span><span class="nx">setPieceHashes</span> <span class="nx">ct</span><span class="p">,</span> <span class="s">"."</span>
 <span class="nv">t = </span><span class="nx">lt</span><span class="p">.</span><span class="nx">bencode</span> <span class="nx">ct</span><span class="p">.</span><span class="nx">generate</span><span class="p">()</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="nx">t</span>
 </pre></div>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/fanatid">fanatid</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
