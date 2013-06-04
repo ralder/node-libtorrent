@@ -1,56 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <title>node-libtorrent by fanatid</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Node-libtorrent by fanatid</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/fanatid/node-libtorrent">View on GitHub</a>
-    <div class="shell">
-
+    <div class="wrapper">
       <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Node-libtorrent</h1>
-            <h2>libtorrent bindings for node.js</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/fanatid/node-libtorrent/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fanatid/node-libtorrent/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
         <h1>node-libtorrent</h1>
+        <p>libtorrent bindings for node.js</p>
+
+        <p class="view"><a href="https://github.com/fanatid/node-libtorrent">View the Project on GitHub <small>fanatid/node-libtorrent</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/fanatid/node-libtorrent/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/fanatid/node-libtorrent/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/fanatid/node-libtorrent">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="node-libtorrent" class="anchor" href="#node-libtorrent"><span class="octicon octicon-link"></span></a>node-libtorrent</h1>
 
 <p>node-libtorrent provides native bindings to <a href="http://www.rasterbar.com/products/libtorrent/">libtorrent rastebar</a> as a <a href="http://nodejs.org/docs/latest/api/addons.html">Node.js addon</a>.</p>
 
-<h1>Getting started</h1>
+<h1>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h1>
 
 <p>From your project diretctory, run:</p>
 
@@ -61,9 +45,11 @@ $ node-gyp configure
 $ node-gyp build
 </code></pre>
 
-<h1>Examples</h1>
+<h1>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
 
-<h4>Simple client</h4>
+<h4>
+<a name="simple-client" class="anchor" href="#simple-client"><span class="octicon octicon-link"></span></a>Simple client</h4>
 
 <div class="highlight"><pre><span class="nv">lt = </span><span class="nx">require</span> <span class="s">"../build/Release/libtorrent"</span>
 
@@ -82,7 +68,8 @@ $ node-gyp build
 <span class="nx">main</span><span class="p">()</span>
 </pre></div>
 
-<h4>Create torrent</h4>
+<h4>
+<a name="create-torrent" class="anchor" href="#create-torrent"><span class="octicon octicon-link"></span></a>Create torrent</h4>
 
 <div class="highlight"><pre><span class="nv">lt = </span><span class="nx">require</span> <span class="s">"../build/Release/libtorrent"</span>
 
@@ -94,21 +81,12 @@ $ node-gyp build
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="nx">t</span>
 </pre></div>
       </section>
-
       <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/fanatid">fanatid</a> can be found on <a href="https://github.com/fanatid/node-libtorrent">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+        <p>This project is maintained by <a href="https://github.com/fanatid">fanatid</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
