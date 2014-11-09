@@ -11,7 +11,7 @@
     "url": "https://github.com/martintrojer/node-libtorrent/issues"
   },
   "main": "./lib/libtorrent.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": ">= 0.8.0"
   },

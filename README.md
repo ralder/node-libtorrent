@@ -4,6 +4,8 @@ node-libtorrent provides native bindings to [libtorrent rastebar](http://www.ras
 
 this is a fork of https://github.com/fanatid/node-libtorrent
 
+This library supports version 1.0+
+
 # Getting started
 Execute in command line:
 ```
