@@ -161,8 +161,8 @@ namespace nodelt {
       FunctionTemplate::New(start_lsd)->GetFunction());
     tpl->PrototypeTemplate()->Set(String::NewSymbol("start_natpmp"),
       FunctionTemplate::New(start_natpmp)->GetFunction());
-    tpl->PrototypeTemplate()->Set(String::NewSymbol("stop_upnp"),
-      FunctionTemplate::New(stop_upnp)->GetFunction());
+    tpl->PrototypeTemplate()->Set(String::NewSymbol("start_upnp"),
+      FunctionTemplate::New(start_upnp)->GetFunction());
 
     tpl->PrototypeTemplate()->Set(String::NewSymbol("stop_lsd"),
       FunctionTemplate::New(stop_lsd)->GetFunction());
